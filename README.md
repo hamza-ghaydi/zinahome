@@ -227,12 +227,13 @@ module.exports = {
 <tr>
 <td valign="top">
 <h3 align="center">Home Page</h3>
-  <hr>
+<hr>
   
 <img src="screenshots/home.png" width="500" />
 </td>
 <td valign="top">
-<b>About Us</b><br>
+<h3 align="center">About Us</h3>
+<hr>
 <img src="screenshots/about.png" width="500" />
 </td>
 </tr>
@@ -243,22 +244,28 @@ module.exports = {
 <table>
 <tr>
 <td valign="top">
-<b>Product Catalog</b><br>
-<img src="screenshots/shop.png" width="430" />
+<h3 align="center">Product Catalog</h3>
+  <hr>
+<img src="screenshots/shop.png" width="500" />
 </td>
 <td valign="top">
-<b>Blog</b><br>
-<img src="screenshots/blog.png" width="430" />
+<h3 align="center">Blog</h3>
+<hr>
+<img src="screenshots/blog.png" width="500" />
 </td>
 </tr>
 </table>
 
 ---
-
-### 🔹 Row 3 — Contact Page (Full Width)
-<img src="screenshots/contact.png" width="800" />
-
-
+<table>
+<tr>
+<td valign="top">
+<h3 align="center">Contact Us</h3>
+  <hr>
+<img src="screenshots/contact.png" width="1000" />
+</td>
+</tr>
+</table>
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Handshake.png" alt="Handshake" width="25" height="25" /> Contributing
 
