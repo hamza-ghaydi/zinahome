@@ -192,7 +192,7 @@ const Checkout = () => {
                     type="text"
                     required
                     className="rounded-2xl border border-white/10 bg-black/40 px-4 py-3 text-white outline-none focus:border-[#DD7210]"
-                    placeholder="Amina Karim"
+                    placeholder="John Doe"
                   />
                 </label>
                 <label className="flex flex-col gap-2 text-sm text-white/70">
