@@ -3,7 +3,7 @@ import Herosection from './partiels/Herosection';
 import FeatureBar from './partiels/FeatureBar';
 import CategoryIcons from './partiels/CategoryIcons';
 import ProductSection from './partiels/ProductSection';
-import View from '../../constant/view';
+import View from '../../layouts/View';
 
 const Home = () => {
     return (

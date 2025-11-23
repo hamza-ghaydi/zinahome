@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect, useCallback } from 'react';
 import images from '../../constant/images';
 import { Link } from 'react-router-dom';
 import { Check, ArrowRight, CaretLeft, CaretRight, Star } from '@phosphor-icons/react';
-import View from '../../constant/view';
+import View from '../../layouts/View';
 
 const About = () => {
     const [currentTestimonial, setCurrentTestimonial] = useState(0);
