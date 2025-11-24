@@ -12,15 +12,22 @@ import SinglePost from './pages/blog/SinglePost';
 import Contact from './pages/contact/Contact';
 import Cart from './pages/cart/Cart';
 import Checkout from './pages/cart/Checkout';
+import ScrollToTop from './components/ScrollToTop';
+import { Toaster } from 'react-hot-toast';
+import BackToTop from './components/BackToTop';
 
 const App = () => {
   return (
     <>
-      <div className="fixed top-0 left-0 right-0 z-50">
-        <TopBar />
+      <Toaster position="top-right" reverseOrder={false} />
+      <ScrollToTop />
+      <TopBar />
+
+      <div className="sticky top-0 z-50 bg-black">
         <Navbar />
       </div>
-      <div className="pt-32">
+      <div >
+
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
@@ -33,6 +40,7 @@ const App = () => {
           <Route path='/checkout' element={<Checkout />} />
         </Routes>
       </div>
+      <BackToTop />
       <Footer />
     </>
   );

@@ -4,6 +4,7 @@ import { Star, CheckCircle, Truck, ShieldCheck, CaretLeft, Minus, Plus } from "@
 import { products } from "../../data/Products";
 import images from "../../constant/images";
 import { useCart } from "../../context/CartContext.jsx";
+import toast from "react-hot-toast";
 
 const accentColor = "#DD7210";
 
@@ -54,6 +55,14 @@ const ProductDetails = () => {
 
   const handleAddToCart = () => {
     addToCart(product, quantity);
+    toast.success(`${product.title} added to cart!`, {
+      duration: 5000,
+      style: {
+        borderRadius: "10px",
+        background: "#DD7210",
+        color: "#fff",
+      },
+    });
   };
 
   return (
@@ -100,8 +109,8 @@ const ProductDetails = () => {
                 key={index}
                 onClick={() => setActiveMedia(media)}
                 className={`rounded-2xl border p-1 transition ${activeMedia === media
-                    ? "border-[#DD7210]"
-                    : "border-white/10 hover:border-white/30"
+                  ? "border-[#DD7210]"
+                  : "border-white/10 hover:border-white/30"
                   }`}
               >
                 <img
@@ -145,8 +154,8 @@ const ProductDetails = () => {
                   key={color.hex}
                   onClick={() => setSelectedColor(index)}
                   className={`h-10 w-10 rounded-full border-2 transition cursor-pointer ${selectedColor === index
-                      ? "border-white"
-                      : "border-transparent hover:border-white/30"
+                    ? "border-white"
+                    : "border-transparent hover:border-white/30"
                     }`}
                   style={{ backgroundColor: color.hex }}
                   aria-label={color.label}
@@ -219,8 +228,8 @@ const ProductDetails = () => {
               <button
                 key={tab}
                 className={`rounded-full lg:px-6 lg:py-2 px-2 py-1 text-sm uppercase lg:tracking-[0.2em] tracking-[0.1em] ${activeTab === tab
-                    ? "bg-white text-black"
-                    : "text-white/60 hover:text-white"
+                  ? "bg-white text-black"
+                  : "text-white/60 hover:text-white"
                   }`}
                 onClick={() => setActiveTab(tab)}
               >
