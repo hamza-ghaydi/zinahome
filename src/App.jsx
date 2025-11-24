@@ -26,7 +26,7 @@ const App = () => {
       <div className="sticky top-0 z-50 bg-black">
         <Navbar />
       </div>
-      <div >
+      <div className='lg:pt-5'>
 
         <Routes>
           <Route path='/' element={<Home />} />
